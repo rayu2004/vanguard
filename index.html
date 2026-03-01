@@ -1,102 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-<!-- ADD META TAG REQUIRED TO MAKE PAGE RESPONSIVE-->
-    <meta name="description" content="Vaanguard- Leading the Future of Success. Premier strategic investment and business acceleration firm for high-growth enterprises.">
-    <meta name="keywords" content="business growth, strategic investment, mergers, corporate consulting, digital transformation">
-<!-- ADD META TAG FOR AUTHOR AND YOUR NAME-->
-    <title>Vanguard | Leading the Future of Success</title>
-<!-- ADD LINK TO YOUR CSS-->
+  <meta charset="UTF-8" />
+
+  <!-- REQUIRED: responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta
+    name="description"
+    content="Vaanguard — Leading the Future of Success. Premier strategic investment and business acceleration firm for high-growth enterprises."
+  />
+  <meta
+    name="keywords"
+    content="business growth, strategic investment, mergers, corporate consulting, digital transformation"
+  />
+  <meta name="author" content="YOUR NAME" />
+
+  <title>Vaanguard | Leading the Future of Success</title>
+
+  <!-- Link to your CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-<!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
-    Vaanguard
-        Main Navigation
-            About
-            Services
-            Contact
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-        Innovation & Investment
-        We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.
-        Request a Consultation
+  <!-- =========================
+       HEADER / PRIMARY NAV
+  ========================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Vaanguard home">
+        <img src="images/vanguard-logo.svg" alt="Vaanguard logo" class="brand-logo" />
+        <span class="brand-name">Vaanguard</span>
+      </a>
 
-        Our Expertise. Your Edge.
-        We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'
+      <!-- Mobile menu (no JS): checkbox toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
 
-        What We Offer
-            Strategic Growth Consulting
-            Unlock new revenue streams and optimize market expansion strategies.
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            High-Impact Investment Solutions
-            Maximize returns with data-driven portfolio management.
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+  <main id="main">
+    <!-- =========================
+         HERO / INNOVATION & INVESTMENT
+    ========================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <header class="hero-header">
+          <h1 id="hero-title">Innovation &amp; Investment</h1>
+        </header>
 
-            Business Acceleration & Mergers
-            Identify opportunities for rapid growth and high-value acquisitions.
+        <p class="hero-lead">
+          We empower businesses to lead the future with high-impact strategies, market intelligence,
+          and financial solutions that drive success.
+        </p>
 
-            Digital Transformation
-            Stay at the forefront of industry advancements with AI, blockchain, and automation.
+        <a class="btn btn-primary" href="#contact">Request a Consultation</a>
+      </div>
+    </section>
 
-            Exclusive Executive Advisory Services
-            Personalized insights and leadership support for C-suite executives and high-net-worth investors.
+    <!-- =========================
+         ABOUT / EXPERTISE
+    ========================== -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header>
+          <h2 id="about-title">Our Expertise. Your Edge.</h2>
+        </header>
 
-            Corporate Innovation
-            Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.
+        <p class="about-text">
+          We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield
+          investment strategies to propel businesses forward. Whether you're looking to scale,
+          optimize, or dominate, our strategic expertise delivers results.
+        </p>
+      </div>
+    </section>
 
-            Proven Results
-            Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.
+    <!-- =========================
+         SERVICES / WHAT WE OFFER
+    ========================== -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header>
+          <h2 id="services-title">What We Offer</h2>
+        </header>
 
-                Profits
-                Year
-                Revenue ($M)
-                Growth (%)
+        <div class="card-grid">
+          <article class="card">
+            <h3>Strategic Growth Consulting</h3>
+            <p>Unlock new revenue streams and optimize market expansion strategies.</p>
+          </article>
 
-                2020
-                $120M
-                30%
+          <article class="card">
+            <h3>High-Impact Investment Solutions</h3>
+            <p>Maximize returns with data-driven portfolio management.</p>
+          </article>
 
-                2021
-                $180M
-                50%
+          <article class="card">
+            <h3>Business Acceleration &amp; Mergers</h3>
+            <p>Identify opportunities for rapid growth and high-value acquisitions.</p>
+          </article>
 
-                2022
-                $250M
-                70%
+          <article class="card">
+            <h3>Digital Transformation</h3>
+            <p>Stay at the forefront of industry advancements with AI, blockchain, and automation.</p>
+          </article>
 
-                2023
-                $340M
-                85%
+          <article class="card">
+            <h3>Exclusive Executive Advisory Services</h3>
+            <p>Personalized insights and leadership support for C-suite executives and high-net-worth investors.</p>
+          </article>
 
-                2024
-                $420M
-                100%
+          <article class="card">
+            <h3>Corporate Innovation</h3>
+            <p>
+              Strategic implementation of new ideas, technologies, and processes to drive business growth,
+              enhance competitive advantage, and adapt to evolving market demands.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-                Growth
-<!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-                    <div  id="bar-chart">
-                        <div class="bar" data-year="2020" style="--height: 30%;"></div>
-                        <div class="bar" data-year="2021" style="--height: 50%;"></div>
-                        <div class="bar" data-year="2022" style="--height: 70%;"></div>
-                        <div class="bar" data-year="2023" style="--height: 85%;"></div>
-                        <div class="bar" data-year="2024" style="--height: 100%;"></div>
-                    </div>
+    <!-- =========================
+         RESULTS / TABLE + BAR CHART
+    ========================== -->
+    <section class="results" id="results" aria-labelledby="results-title">
+      <div class="container results-inner">
+        <header class="results-header">
+          <h2 id="results-title">Proven Results</h2>
+          <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+        </header>
 
-        Contact Us
-        Want to take your business to the next level? Get in touch with our elite team today.
+        <div class="results-content">
+          <div class="results-table-wrap" role="region" aria-label="Revenue growth table">
+            <table class="results-table">
+              <caption>Profits</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col">Revenue ($M)</th>
+                  <th scope="col">Growth (%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2020</th>
+                  <td>$120M</td>
+                  <td>30%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2021</th>
+                  <td>$180M</td>
+                  <td>50%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2022</th>
+                  <td>$250M</td>
+                  <td>70%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2023</th>
+                  <td>$340M</td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <th scope="row">2024</th>
+                  <td>$420M</td>
+                  <td>100%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-            Full Name
+          <div class="chart-wrap" role="region" aria-label="Growth bar chart">
+            <h3 class="chart-title">Growth</h3>
 
-            Email Address
+            <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML -->
+            <div id="bar-chart">
+              <div class="bar" data-year="2020" style="--height: 30%;"></div>
+              <div class="bar" data-year="2021" style="--height: 50%;"></div>
+              <div class="bar" data-year="2022" style="--height: 70%;"></div>
+              <div class="bar" data-year="2023" style="--height: 85%;"></div>
+              <div class="bar" data-year="2024" style="--height: 100%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            Company Name
+    <!-- =========================
+         CONTACT / FORM
+    ========================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header>
+          <h2 id="contact-title">Contact Us</h2>
+          <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+        </header>
 
-            Industry
+        <form class="contact-form" action="#" method="post">
+          <div class="field">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="full-name" type="text" autocomplete="name" required />
+          </div>
 
-            How can we help you?
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
 
-            Submit
+          <div class="field">
+            <label for="company">Company Name</label>
+            <input id="company" name="company" type="text" autocomplete="organization" />
+          </div>
 
-        For educational purposes only. 
-        Email: info@vaanguard.com 
-        Phone: 480.123.4567
+          <div class="field">
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry">
+              <option value="">Select one</option>
+              <option>Technology</option>
+              <option>Finance</option>
+              <option>Healthcare</option>
+              <option>Retail</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field field-full">
+            <label for="message">How can we help you?</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="fineprint">For educational purposes only.</p>
+
+      <address class="footer-contact">
+        <p><span>Email:</span> <a href="mailto:info@vaanguard.com">info@vaanguard.com</a></p>
+        <p><span>Phone:</span> <a href="tel:+14801234567">480.123.4567</a></p>
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
